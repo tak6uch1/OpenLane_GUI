@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  gui:
+    build: gui
+    container_name: gui
+    command: /usr/sbin/sshd -D
+    ports:
+      - "49944:22"
+    volumes:
+      - type: bind
+        source: .
+        target: /openLANE_flow
