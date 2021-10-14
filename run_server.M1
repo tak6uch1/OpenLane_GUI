@@ -1,0 +1,4 @@
+#!/bin/bash
+
+lima docker run -d -p 49944:22 -v $PWD:/openLANE_flow openlane_gui /usr/sbin/sshd -D
+
