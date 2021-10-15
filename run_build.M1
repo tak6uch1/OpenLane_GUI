@@ -1,3 +1,3 @@
 #!/bin/bash
 
-lima docker build --platform amd64 -t openlane_gui gui_M1
+lima docker build --platform amd64 -t openlane_gui gui

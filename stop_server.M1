@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ID=`lima docker ps -a | grep openlane_gui | awk '{print $1}'`
+
+lima docker stop $ID
+lima docker rm $ID
+limactl stop
